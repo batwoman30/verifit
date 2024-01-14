@@ -74,20 +74,6 @@ public class VerifitAttendanceService {
                 break;
             }
         }
-
-        /*for (int i = 0; i < verifitAttendanceRecords.size() - 1; i++) {
-            LocalDate currentDate = verifitAttendanceRecords.get(i).getAttendanceDate().toLocalDate();
-            LocalDate nextDate = verifitAttendanceRecords.get(i + 1).getAttendanceDate().toLocalDate();
-
-            // Check if the current attendance is within a week of the next one
-            if (nextDate.minusDays(7).isBefore(currentDate)) {
-                streak++;
-            } else {
-                // If there's a gap of more than a week, the streak is broken
-                break;
-            }
-        }*/
-
         return streak;
     }
 }
