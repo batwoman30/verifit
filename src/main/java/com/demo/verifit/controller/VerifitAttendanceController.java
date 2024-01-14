@@ -23,7 +23,6 @@ public class VerifitAttendanceController {
 
     @GetMapping("/getUserCurrentStreak")
     public ResponseEntity<Integer> getUserCurrentStreak(@RequestParam String userId) {
-        System.out.println("Reached here::" + userId);
         return ResponseEntity.ok(verifitAttendanceService.getUserCurrentStreak(userId));
     }
 }
